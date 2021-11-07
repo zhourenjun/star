@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/homeFragment">
 
     <keep_state_fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/homeFragment"
         android:name="com.dx.star.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <keep_state_fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.dx.star.ui.cart.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/cartFragment"
+        android:name="com.dx.star.ui.cart.CartFragment"
+        android:label="@string/title_cart"
+        tools:layout="@layout/fragment_cart" />
 
     <keep_state_fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.dx.star.ui.my.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/myFragment"
+        android:name="com.dx.star.ui.my.MyFragment"
+        android:label="@string/person_center"
+        tools:layout="@layout/fragment_my" />
 </navigation>

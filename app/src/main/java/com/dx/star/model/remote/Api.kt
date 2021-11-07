@@ -1,7 +1,5 @@
 package com.dx.star.model.remote
 
-import com.creative.recure.model.remote.*
-import com.google.gson.JsonObject
 import okhttp3.MultipartBody
 import retrofit2.http.*
 
@@ -47,7 +45,7 @@ interface Api {
 
     //上传查体
     @POST("/patientInfo/physicalexamUpload")
-    suspend fun uploadPop(@Body jsonObject: JsonObject): HttpResult<String>
+    suspend fun uploadPop( @Part("version") version: String): HttpResult<String>
 
     //上传病档
     @POST("/patientInfo/uploadData/v2")
@@ -58,5 +56,5 @@ interface Api {
 
 
     @POST("/check/barCodeNum")
-    suspend fun checkBarCode(@Body jsonObject: JsonObject): HttpResult<String>
+    suspend fun checkBarCode( @Part("version") version: String): HttpResult<String>
 }

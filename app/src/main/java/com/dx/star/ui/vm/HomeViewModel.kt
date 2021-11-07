@@ -1,4 +1,4 @@
-package com.dx.star.ui.home
+package com.dx.star.ui.vm
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

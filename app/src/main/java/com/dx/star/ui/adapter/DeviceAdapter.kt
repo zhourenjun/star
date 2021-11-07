@@ -1,4 +1,4 @@
-package com.dx.star.ui.cart
+package com.dx.star.ui.adapter
 
 /**
  *

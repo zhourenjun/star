@@ -2,8 +2,6 @@ package com.dx.star.model.local
 
 import android.content.Context
 import androidx.room.*
-import com.creative.recure.model.local.NewPatient
-import com.creative.recure.model.local.NewPatientDao
 
 @Database(
     entities = [NewPatient::class],

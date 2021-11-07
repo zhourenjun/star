@@ -16,22 +16,7 @@ class Repository(private val db: AppDatabase, private val api: Api) : BaseReposi
     //-----------------------------------------病人--------------------------------------
     suspend fun isPatientExists(patientId: String) = db.patientDao().getPatient(patientId) != null
 
-    suspend fun getPatientByPhone(phone: String) = db.patientDao().getPatientByPhone(phone)
 
-    suspend fun getPatientByIdentityNo(identityNo: String) =
-        db.patientDao().getPatientByIdentityNo(identityNo)
-
-    suspend fun getPatientByMedicareNo(medicareNo: String) =
-        db.patientDao().getPatientByMedicareNo(medicareNo)
-
-    suspend fun getPatientByBarCodeNum(barCodeNum: String) =
-        db.patientDao().getPatientByBarCodeNum(barCodeNum)
-
-    suspend fun getPatientByUpload() = db.patientDao().getPatientByUpload()
-
-    fun getAllPatients() = db.patientDao().getAllPatients()
-
-    fun getPatients(search: String) = db.patientDao().getPatientSearch(search)
 
 
 

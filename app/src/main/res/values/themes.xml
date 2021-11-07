@@ -16,7 +16,6 @@
         <!-- 文字为英文时，自动变成了大写。false就可以了 -->
         <item name="android:textAllCaps">false</item>
         <item name="android:windowFullscreen">true</item>
-        <item name="android:listChoiceIndicatorMultiple">@drawable/check_box_green</item>
     </style>
 
 

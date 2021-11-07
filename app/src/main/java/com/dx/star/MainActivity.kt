@@ -31,6 +31,7 @@ class MainActivity : BaseActivity(R.layout.activity_main) {
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
+        navController.setGraph(R.navigation.mobile_navigation)
         binding.navView.setupWithNavController(navController)
     }
 

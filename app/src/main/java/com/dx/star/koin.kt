@@ -6,9 +6,9 @@ import com.dx.star.model.remote.Api
 import com.dx.star.model.remote.createWebService
 import com.dx.star.model.remote.getOkHttpClient
 import com.dx.star.util.Constant
-import com.dx.star.ui.cart.DashboardViewModel
-import com.dx.star.ui.home.HomeViewModel
-import com.dx.star.ui.my.NotificationsViewModel
+import com.dx.star.ui.vm.CartViewModel
+import com.dx.star.ui.vm.HomeViewModel
+import com.dx.star.ui.vm.MyViewModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
@@ -21,9 +21,9 @@ import org.koin.dsl.module
  */
 
 val viewModelModule = module {
-    viewModel { DashboardViewModel(get()) }
+    viewModel { CartViewModel(get()) }
     viewModel { HomeViewModel(get()) }
-    viewModel { NotificationsViewModel(get()) }
+    viewModel { MyViewModel(get()) }
 
 }
 
